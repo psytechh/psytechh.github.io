@@ -3,21 +3,64 @@
     <head>
         <meta charset="utf-8">
         <title>Project: Blog</title>
+        <style>
+        #page-title {
+            font-family: "helvetica", monospace;
+        }
+        
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        h2 {
+            font-family: "arial", serif;
+            color: rgb(255, 0, 255);
+        }
+        
+        p {
+            font-family: fantasy;
+        }
+        
+        h6 {
+            font-style: italic;
+            font-size: 0.5em;
+        }
+        #contents li{
+            color: orange;
+            font-weight: bold;
+        }
+        </style>
     </head>
     <body>
         
-        <h1>___'s blog</h1>
+        <h1 id="page-title">Cleber's blog</h1>
 
         <h3>Contents</h3>
-        <ul>
-            <li>First post!</li>
+        <ul id="contents">
+            <a href="#first-post"><li>First post! Welcome!</li></a>
+            <a href="#second-post"><li>Khan Academy: The Adventure Begins!</li></a>
+            <a href="#third-post"><li>The CSS World!</li></a>
         </ul>
+        <br>
+        <h2 id="first-post">First post! Welcome!</h2>
+        <h6>Posted on 25/10/2019</h6>
         
-        <h2>First post</h2>
-        <h6>Posted on some date in some year</h6>
+        <p>First of all, welcome to my blog! Here, I would like to share all my experiences and adventures at developing world.<br>
+            Stay tunned, I'll me back soon.
+        </p>
+        <br>
+        <h2 id="second-post">Khan Academy: The Adventure Begins!</h2>
+        <h6>Posted on 26/10/2019</h6>
         
-        <p>Something excited happened.</p>
+        <p>Today is my first day here at Khan Academy. I started with basic HTML to feel more confident about web developing.</p>
+        <br>
         
+        <h2 id="third-post">The CSS World</h2>
+        <h6>Posted on 28/10/2019</h6>
         
+        <p>CSS is a charming world. You can do marvelous things with css, like turn a frog into a prince. Even the simplest thig can be transformed into something fancy</p>
+        <br>
+        <a href="#page-title"><em>back to top</em></a>
     </body>
 </html>
